@@ -1,12 +1,11 @@
-end = True
-while end:
+while True:
   print('enter a word:')
   word = input()
   if word == 'yes':
     print('That\'s the magic word!')
-    end = False
+    break
   elif  word == 'no':
     print('Okay...')
-    end = False
+    break
   else:
     print('sure')
