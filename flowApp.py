@@ -1,3 +1,7 @@
+def counter(num):
+  for i in range(int(num)):
+    print(str(i+1))
+
 while True:
   print('enter a word:')
   word = input()
@@ -9,7 +13,6 @@ while True:
     break
   elif word == 'count':
     num = input()
-    for i in range(int(num)+1):
-      print(str(i))
+    counter(num)
   else:
     print('sure')
