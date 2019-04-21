@@ -7,5 +7,9 @@ while True:
   elif  word == 'no':
     print('Okay...')
     break
+  elif word == 'count':
+    num = input()
+    for i in range(int(num)+1):
+      print(str(i))
   else:
     print('sure')
