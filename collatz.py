@@ -1,6 +1,6 @@
 def collatz(num):
   num = int(num)
-  return num * 3 + 1 if num % 2 else int(num / 2)
+  return num * 3 + 1 if num % 2 else num // 2
 
 number = input()
 
