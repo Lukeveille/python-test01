@@ -1,4 +1,5 @@
 import random
+import sys
 secretNumber = random.randint(1, 20)
 
 print('I am thinking of a number between 1 and 20')
@@ -7,7 +8,9 @@ for count in range(1, 7):
   print('Take a guess.')
   guess = input()
 
-  if int(guess) < secretNumber:
+  if guess == 'stop':
+    sys.exit()
+  elif int(guess) < secretNumber:
     print('Your guess is too low.')
     count += 1
   elif int(guess) > secretNumber:
